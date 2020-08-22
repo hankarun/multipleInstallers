@@ -1,0 +1,5 @@
+function(create_cpack_config filename)
+  set(CPACK_OUTPUT_CONFIG_FILE "${filename}")
+  include(CPack)
+  message(${filename})
+endfunction(create_cpack_config)
